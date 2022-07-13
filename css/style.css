@@ -1,0 +1,65 @@
+@keyframes round{
+	  from {
+	}
+   	to {
+transform: rotate(360deg);
+		}
+}
+
+
+
+
+
+
+
+body {font: 14px/20px 'Arial', sans-serif;}
+.clearfix:before, .clearfix:after{
+	display: table; 
+	content: "";
+	clear: both;
+}
+
+.container{width: 1200px;	margin: 0 auto;}
+
+
+.all{
+	position: absolute;
+}
+.motorbike{
+	margin-left: 370px;
+	width: 457px; 
+	height: 298px;
+	background: url(../images/motobike1.png);
+	position: absolute;
+	z-index: 2;
+}
+
+.wheel1{
+	background: url(../images/koleso.png);
+	width: 141px;
+	height:141px;
+	z-index: 1;
+	animation-name: round;
+	animation-duration: 5s;
+	transition-timing-function: linear;
+	animation-iteration-count:infinite;
+	left: 367px;
+	top: 141px;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+.wheel2{
+	background: url(../images/koleso.png);
+	width: 141px;
+	height:141px;
+	z-index: 1;
+	animation-name: round;
+	animation-duration: 5s;
+	transition-timing-function: linear;
+	animation-iteration-count:infinite;
+	left: 660px;
+	top: 0px;
+	position: relative;
+	animation-fill-mode: forwards;
+}
